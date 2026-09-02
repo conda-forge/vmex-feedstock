@@ -35,7 +35,7 @@ requirements:
     - scipy >=1.15.0
     - netcdf4
     - matplotlib-base
-    - booz-xform-jax
+    - booz-xform-jax >=0.1.1
     - solvax >=0.20.0
     - packaging
     - filelock
