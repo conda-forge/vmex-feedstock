@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.8.1"
+  version: "0.11.0"
   python_min: "3.10"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/v/vmex/vmex-${{ version }}.tar.gz
-  sha256: 847664b168409415dc39453b97b6b3e1e8c615815085e0d083ae92cbf48216c7
+  sha256: e764481d9701dc9e9adf10af25ca9349dc877bd1d4abc0a8b9eb06e363b07f58
 
 build:
   number: 0
