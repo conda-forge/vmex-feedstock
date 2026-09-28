@@ -1,8 +1,8 @@
 schema_version: 1
 
 context:
-  version: "0.8.1"
-  python_min: "3.10"
+  version: "0.11.0"
+  python_min: "3.11"
 
 package:
   name: vmex
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/v/vmex/vmex-${{ version }}.tar.gz
-  sha256: 847664b168409415dc39453b97b6b3e1e8c615815085e0d083ae92cbf48216c7
+  sha256: e764481d9701dc9e9adf10af25ca9349dc877bd1d4abc0a8b9eb06e363b07f58
 
 build:
   number: 0
@@ -30,23 +30,21 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy
-    - jax
-    - jaxlib
-    - scipy >=1.15.0
+    - jax >=0.9.2
+    - jaxlib >=0.9.2
+    - scipy >=1.16
     - netcdf4
+    - h5py
     - matplotlib-base
-    - booz-xform-jax >=0.1.1
-    - solvax >=0.20.0
+    - booz-xform-jax >=0.4.0
+    - solvax >=0.21.0
     - packaging
     - filelock
-    # python < 3.11
-    - tomli
 
 tests:
   - python:
       imports:
         - vmex
-        - vmec_jax
       pip_check: true
       python_version:
         - ${{ python_min }}.*
