@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   version: "0.11.0"
-  python_min: "3.10"
+  python_min: "3.11"
 
 package:
   name: vmex
@@ -30,23 +30,21 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy
-    - jax
-    - jaxlib
-    - scipy >=1.15.0
+    - jax >=0.9.2
+    - jaxlib >=0.9.2
+    - scipy >=1.16
     - netcdf4
+    - h5py
     - matplotlib-base
-    - booz-xform-jax >=0.1.1
-    - solvax >=0.20.0
+    - booz-xform-jax >=0.4.0
+    - solvax >=0.21.0
     - packaging
     - filelock
-    # python < 3.11
-    - tomli
 
 tests:
   - python:
       imports:
         - vmex
-        - vmec_jax
       pip_check: true
       python_version:
         - ${{ python_min }}.*
