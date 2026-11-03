@@ -9,7 +9,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/v/vmex/vmex-${{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/v/vmex/vmex-${{ version }}.tar.gz
   sha256: f4aafe6cb0b31b2fbfce417009ea9055cee4ef44e73166be1cb8792ac3070299
 
 build:
