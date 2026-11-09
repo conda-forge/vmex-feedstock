@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.13.0"
+  version: "0.14.0"
   python_min: "3.11"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/v/vmex/vmex-${{ version }}.tar.gz
-  sha256: f4aafe6cb0b31b2fbfce417009ea9055cee4ef44e73166be1cb8792ac3070299
+  sha256: afbb0ebbc1bf3761fd96280934c28499c741b72d30eb3cabbf079e1c24493bb4
 
 build:
   number: 0
@@ -36,8 +36,8 @@ requirements:
     - netcdf4
     - h5py
     - matplotlib-base
-    - booz-xform-jax >=0.4.3
-    - solvax >=0.35.0
+    - booz-xform-jax >=0.5.1
+    - solvax >=0.35.1
     - packaging
     - filelock
 
